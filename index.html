@@ -3,59 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Abhishek Rao - Software Quality Tester & Web Developer Portfolio">
-    <title>Abhishek Rao | Tester & Developer</title>
+    <meta name="description" content="Abhishek Kumar — Product Engineer & Full-Stack Developer specializing in Java, Spring Boot, MongoDB, and accessibility testing.">
+    <meta name="author" content="Abhishek Kumar">
+    <meta name="theme-color" content="#0b0f1a">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Abhishek Kumar | Product Engineer & Full-Stack Developer">
+    <meta property="og:description" content="Building scalable backend services & accessible web applications.">
+    <meta property="og:type" content="website">
+
+    <title>Abhishek Kumar | Product Engineer & Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Animated Background -->
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="logo">Abhishek Rao</div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a href="#home" class="logo">
+                <span class="logo-mark">AK</span>
+                <span class="logo-text">Abhishek Kumar</span>
+            </a>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                <i class="fas fa-moon"></i>
-            </button>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
+        <div class="container hero-content">
             <div class="hero-text">
-                <h1 class="hero-title">Hi, I'm <span class="gradient-text">Abhishek Rao</span></h1>
-                <h2 class="hero-subtitle">Tester Trainee & Web Developer</h2>
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    Product Engineer @ GetPost Labs
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Abhishek Kumar</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="typed" id="typed"></span><span class="cursor">|</span>
+                </h2>
                 <p class="hero-description">
-                    Passionate about the world of Technology and Innovation. BCA graduate with expertise in Software Quality Testing, Web Development, Data Analysis, and Problem-Solving.
+                    I build scalable backend services and accessible web applications. Currently engineering
+                    products with <strong>Java, Spring Boot &amp; MongoDB</strong> at GetPost Labs (Brisbane, Australia),
+                    with a strong foundation in full-stack development and WCAG-compliant accessibility testing.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-folder-open"></i> View Projects
+                    </a>
+                    <a href="Abhishek Resume.pdf" class="btn btn-ghost" download>
+                        <i class="fas fa-download"></i> Resume
+                    </a>
                 </div>
                 <div class="social-links">
-                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://leetcode.com" target="_blank" aria-label="LeetCode"><i class="fas fa-code"></i></a>
-                    <a href="https://hackerrank.com" target="_blank" aria-label="HackerRank"><i class="fab fa-hackerrank"></i></a>
+                    <a href="https://linkedin.com/in/abhishekraoas" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/abhishekraoas" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://leetcode.com/u/abhishekraoas" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+                    <a href="https://hackerrank.com/abhishekraoas" target="_blank" rel="noopener" aria-label="HackerRank"><i class="fab fa-hackerrank"></i></a>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="image-placeholder">
-                    <img src="images/profile.png" alt="Abhishek Rao" class="profile-img">
+                <div class="image-glow"></div>
+                <div class="image-frame">
+                    <img src="images/profile.png" alt="Abhishek Kumar" class="profile-img">
                 </div>
+                <div class="floating-card card-1">
+                    <i class="fab fa-java"></i>
+                    <span>Spring Boot</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-universal-access"></i>
+                    <span>WCAG / A11y</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-database"></i>
+                    <span>MongoDB</span>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <span class="mouse"><span class="wheel"></span></span>
+        </a>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <span class="stat-number" data-target="2">0</span><span class="stat-suffix">+</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="100">0</span><span class="stat-suffix">+</span>
+                <span class="stat-label">Problems Solved</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="4">0</span>
+                <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="2">0</span>
+                <span class="stat-label">Degrees (BCA + MCA)</span>
             </div>
         </div>
     </section>
@@ -63,40 +140,57 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a Tester Trainee and Web Developer based in Gorakhpur, UP, India. Currently training at Magic EdTech, 
-                        I specialize in Software Quality and Test Assurance, exploring the ever-evolving landscape of Web Development, 
-                        Data Analysis, and Problem-Solving.
+                        I'm a <strong>Product Engineer</strong> and <strong>Full-Stack Developer</strong> based in
+                        Gorakhpur, India, currently working remotely with <strong>GetPost Labs</strong> (Brisbane, Australia).
+                        I design, build, and maintain scalable backend services and RESTful APIs using Java, Spring Boot,
+                        and MongoDB for the Lex-AML platform.
                     </p>
                     <p>
-                        With a Master's degree in Computer Applications from Madan Mohan Malaviya University of Technology (Smart Batch - Sep 2025) 
-                        and a Bachelor's in Computer Applications from Deendayal Upadhyay Gorakhpur University, I have a strong foundation in 
-                        software development and testing. I'm passionate about leveraging technology to contribute meaningfully to the field and 
-                        exploring possibilities of collaborative learning and growing.
+                        My background spans the full software lifecycle — from product development and API integration to
+                        code reviews and deployment within Agile teams. Before GetPost Labs, I worked as a
+                        <strong>Software Tester</strong> at Magic EdTech, where I specialized in manual and automated
+                        <strong>accessibility testing</strong> (NVDA, JAWS, VoiceOver) to ensure WCAG compliance.
                     </p>
-                    
-                    <div class="info-cards">
-                        <div class="info-card">
-                            <i class="fas fa-graduation-cap"></i>
-                            <h3>Education</h3>
-                            <p>MCA from MMMUT</p>
-                            <span>Sep 2023 - Sep 2025</span>
-                        </div>
-                        <div class="info-card">
-                            <i class="fas fa-briefcase"></i>
-                            <h3>Experience</h3>
-                            <p>Tester Trainee</p>
-                            <span>Magic EdTech</span>
-                        </div>
-                        <div class="info-card">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h3>Location</h3>
-                            <p>Gorakhpur, UP</p>
-                            <span>India</span>
-                        </div>
+                    <p>
+                        I hold a <strong>Master's in Computer Applications</strong> from MMMUT Gorakhpur and a
+                        Bachelor's from DDU Gorakhpur University. I'm passionate about building reliable, accessible
+                        software and contributing to open source.
+                    </p>
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+                    </div>
+                </div>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Current Role</h3>
+                        <p>Product Engineer Trainee</p>
+                        <span>GetPost Labs · Remote</span>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                        <p>MCA — 75.70%</p>
+                        <span>MMMUT, Gorakhpur</span>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-universal-access"></i>
+                        <h3>Specialty</h3>
+                        <p>Backend &amp; A11y</p>
+                        <span>APIs · WCAG Testing</span>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Gorakhpur, UP</p>
+                        <span>India</span>
                     </div>
                 </div>
             </div>
@@ -106,70 +200,59 @@
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">My journey</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">Present (3+ months)</div>
-                        <h3>Tester Trainee</h3>
-                        <h4>Magic EdTech | Mumbai, Uttar Pradesh, India</h4>
+                        <div class="timeline-date"><i class="far fa-calendar"></i> April 2026 – Present</div>
+                        <h3>Product Engineer Trainee</h3>
+                        <h4>GetPost Labs · Remote (Brisbane, Australia)</h4>
                         <ul>
-                            <li>Tester Training for Software Quality and Test Assurance</li>
-                            <li>Working with technologies: HTML, CSS, JavaScript, C++, Node.js, React.js, Express.js, MongoDB, DBMS</li>
-                            <li>Guide & mentor contributors through open-source projects</li>
-                            <li>Ensure successful collaboration and impactful contributions</li>
+                            <li>Design, develop, and maintain scalable backend services and RESTful APIs using <strong>Java, Spring Boot, and MongoDB</strong> for Lex-AML platform workflows.</li>
+                            <li>Perform backend debugging, API integration, code reviews, and issue resolution to ensure reliable, efficient system performance.</li>
+                            <li>Contribute to product development, technical documentation, testing, and deployment within an Agile environment.</li>
                         </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">July 2025 - September 2025</div>
-                        <h3>Project Mentor</h3>
-                        <h4>GirlScript Summer of Code</h4>
-                        <ul>
-                            <li>Guide & mentor contributors through open-source projects, ensuring successful collaboration and impactful contributions</li>
-                        </ul>
+                        <div class="timeline-tags">
+                            <span>Java</span><span>Spring Boot</span><span>MongoDB</span><span>REST APIs</span><span>Agile</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">3 months (2024-25)</div>
-                        <h3>Campus Ambassador</h3>
-                        <h4>GirlScript Summer of Code</h4>
+                        <div class="timeline-date"><i class="far fa-calendar"></i> Sep 2025 – April 2026</div>
+                        <h3>Software Tester</h3>
+                        <h4>Magic EdTech · Full-time (Hybrid)</h4>
                         <ul>
-                            <li>As a Campus Ambassador for GSSoC, help students participate in open-source and promote GSSoC through workshops and presentations</li>
-                            <li>Explore open-source contributions and mentorship opportunities</li>
+                            <li>Conducted manual and automation <strong>accessibility testing</strong> for web applications.</li>
+                            <li>Performed manual accessibility testing using screen readers such as NVDA, JAWS, and VoiceOver, tracking issues in JIRA.</li>
+                            <li>Developed and executed automated test cases using <strong>Java and Selenium</strong> for efficiency and scalability.</li>
+                            <li>Collaborated with cross-functional teams to ensure <strong>WCAG compliance</strong> and enhance overall product accessibility.</li>
                         </ul>
+                        <div class="timeline-tags">
+                            <span>Selenium</span><span>Java</span><span>NVDA / JAWS</span><span>WCAG</span><span>JIRA</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">3 months</div>
-                        <h3>Project Administrator</h3>
+                        <div class="timeline-date"><i class="far fa-calendar"></i> GSSoC '24</div>
+                        <h3>Campus Ambassador &amp; Mentor</h3>
                         <h4>GirlScript Summer of Code</h4>
                         <ul>
-                            <li>As a Project Admin for GSSoC, guide & mentor contributors through open-source projects</li>
-                            <li>Provide technical guidance and create a supportive learning environment for team and projects to enhance their skills and expertise</li>
+                            <li>Guided and mentored contributors through open-source projects, ensuring successful collaboration and impactful contributions.</li>
+                            <li>Promoted open-source participation through workshops and presentations on campus.</li>
                         </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">September 2020 - November 2020</div>
-                        <h3>Social Media Marketing</h3>
-                        <h4>The Digital Sarath</h4>
-                        <ul>
-                            <li>Managed social media marketing campaigns and digital content</li>
-                        </ul>
+                        <div class="timeline-tags">
+                            <span>Open Source</span><span>Mentorship</span><span>Community</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -179,56 +262,82 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">Things I've built</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-users"></i>
+                <article class="project-card featured">
+                    <div class="project-top">
+                        <div class="project-icon"><i class="fas fa-users"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/abhishekraoas/MCA-Alumni-Network" target="_blank" rel="noopener" aria-label="View code on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
                     <h3>MCA Alumni Network</h3>
                     <p class="project-type">Full-Stack Alumni Management System</p>
                     <p class="project-description">
-                        Developed a full-stack MCA Alumni Network with Node.js, Tailwind, React, JavaScript, MongoDB, Express
+                        A full-stack alumni portal connecting students and alumni — featuring secure auth, an admin panel,
+                        and a job board, built with the MERN stack and a clean Neumorphic UI.
                     </p>
                     <ul class="project-features">
-                        <li>Implemented JWT-based login, OTP verification, and role-based access control</li>
-                        <li>Built Admin Panel for User verification, Profile updates, and job post management</li>
-                        <li>Designed modern Neumorphic UI with responsive layout using Tailwind CSS</li>
-                        <li>Enabled Job posting & Application system for Students and Alumni</li>
-                        <li>Integrated Nodemailer for sending OTP, Welcome, and Password reset emails</li>
-                        <li>Added features like Pagination, search, secure password reset, and Production deployment</li>
+                        <li>JWT-based login, OTP verification, and role-based access control</li>
+                        <li>Admin panel for user verification, profile updates, and job-post management</li>
+                        <li>Job posting &amp; application system for students and alumni</li>
+                        <li>Nodemailer integration for OTP, welcome, and password-reset emails</li>
+                        <li>Pagination, search, secure password reset, and production deployment</li>
                     </ul>
                     <div class="project-tags">
-                        <span>Node.js</span>
-                        <span>React</span>
-                        <span>MongoDB</span>
-                        <span>Express</span>
-                        <span>Tailwind CSS</span>
+                        <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Tailwind CSS</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-link"></i>
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-icon"><i class="fas fa-link"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/abhishekraoas/URL-Shortener" target="_blank" rel="noopener" aria-label="View code on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
                     <h3>URL Shortener</h3>
-                    <p class="project-type">Full-Stack Application</p>
+                    <p class="project-type">Full-Stack Web Application</p>
                     <p class="project-description">
-                        Built a URL Shortener web application where user can create custom URLs into short, manageable ones
+                        A web app that turns long links into short, manageable URLs with click analytics to measure
+                        audience engagement.
                     </p>
                     <ul class="project-features">
-                        <li>Developed an elegant URL Shortener web application</li>
-                        <li>Track usage, display total count of how many times each shortened URL has been clicked to gain insights into your audience's engagement</li>
-                        <li>Designed a MongoDB database for storing product information, user data, and order details</li>
+                        <li>Create custom short URLs from long links</li>
+                        <li>Track per-link click counts for engagement insights</li>
+                        <li>MongoDB-backed storage for links and usage data</li>
                     </ul>
                     <div class="project-tags">
-                        <span>EJS</span>
-                        <span>HTML5</span>
-                        <span>JavaScript</span>
-                        <span>MongoDB</span>
-                        <span>CSS</span>
+                        <span>EJS</span><span>JavaScript</span><span>Node.js</span><span>MongoDB</span>
                     </div>
-                </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/abhishekraoas/Pokemon" target="_blank" rel="noopener" aria-label="View code on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Pokédex App</h3>
+                    <p class="project-type">Interactive Pokémon Explorer</p>
+                    <p class="project-description">
+                        A responsive Pokédex that fetches live data from the PokéAPI — letting users browse, search,
+                        and inspect Pokémon stats, types, and abilities in a clean interface.
+                    </p>
+                    <ul class="project-features">
+                        <li>Live data fetched dynamically from the PokéAPI</li>
+                        <li>Search and filter Pokémon by name and type</li>
+                        <li>Detailed stat, type, and ability breakdowns</li>
+                        <li>Responsive, mobile-friendly layout</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>JavaScript</span><span>REST API</span><span>HTML5</span><span>CSS3</span>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -236,113 +345,72 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">My toolkit</span>
+                <h2 class="section-title">Skills &amp; Technologies</h2>
+            </div>
             <div class="skills-container">
                 <div class="skill-category">
                     <h3><i class="fas fa-code"></i> Languages</h3>
                     <div class="skill-tags">
-                        <span>C++</span>
-                        <span>JavaScript</span>
-                        <span>Java</span>
-                        <span>Python</span>
-                        <span>SQL</span>
+                        <span>C++</span><span>Java</span><span>JavaScript</span><span>Python</span><span>SQL</span>
                     </div>
                 </div>
-
                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Technologies & Tools</h3>
+                    <h3><i class="fas fa-layer-group"></i> Frameworks &amp; Libraries</h3>
                     <div class="skill-tags">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>Express.js</span>
-                        <span>MongoDB</span>
-                        <span>Tailwind CSS</span>
-                        <span>Bootstrap</span>
-                        <span>HTML</span>
-                        <span>REST APIs</span>
-                        <span>Git</span>
-                        <span>GitHub</span>
-                        <span>Canva</span>
-                        <span>Canvas API</span>
-                        <span>Render</span>
-                        <span>JIRA</span>
+                        <span>Spring Boot</span><span>React</span><span>Angular</span><span>Node.js</span><span>Express.js</span><span>Tailwind CSS</span><span>Bootstrap</span>
                     </div>
                 </div>
-
                 <div class="skill-category">
-                    <h3><i class="fas fa-certificate"></i> Certifications & Declarations</h3>
-                    <div class="certification-list">
-                        <div class="cert-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Java + DSA Alpha Course</strong>
-                                <span>Apna College</span>
-                            </div>
+                    <h3><i class="fas fa-tools"></i> Tools &amp; Platforms</h3>
+                    <div class="skill-tags">
+                        <span>MongoDB</span><span>REST APIs</span><span>Git</span><span>GitHub</span><span>AWS</span><span>Vercel</span><span>Render</span><span>Postman</span><span>JIRA</span><span>Selenium</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> AI &amp; Emerging</h3>
+                    <div class="skill-tags">
+                        <span>Agentic AI</span><span>Claude</span><span>Generative AI</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education + Certifications + Achievements grid -->
+            <div class="cards-grid">
+                <div class="detail-card">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="detail-list">
+                        <div class="detail-item">
+                            <strong>Master of Computer Applications</strong>
+                            <span>MMMUT, Gorakhpur · June 2025</span>
+                            <span class="detail-meta">Percentage: 75.70%</span>
                         </div>
-                        <div class="cert-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Alpha Labs + BCA + 1</strong>
-                                <span>Achievement Declaration</span>
-                            </div>
-                        </div>
-                        <div class="cert-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Apna College Publication + 0</strong>
-                                <span>Publication Record</span>
-                            </div>
-                        </div>
-                        <div class="cert-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>C++ Programming Certification</strong>
-                                <span>Coding Ninja | Dec 2023</span>
-                            </div>
-                        </div>
-                        <div class="cert-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Introduction to Generative AI Course</strong>
-                                <span>Google | Nov 2023</span>
-                            </div>
+                        <div class="detail-item">
+                            <strong>Bachelor of Computer Applications</strong>
+                            <span>DDU Gorakhpur University · Oct 2022</span>
+                            <span class="detail-meta">Percentage: 51.03%</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="detail-card">
+                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                    <div class="detail-list">
+                        <div class="cert-item"><i class="fas fa-check-circle"></i><div><strong>Java + DSA Alpha Course</strong><span>Apna College · Nov 2022</span></div></div>
+                        <div class="cert-item"><i class="fas fa-check-circle"></i><div><strong>API Fundamentals Student Expert</strong><span>Postman · Aug 2024</span></div></div>
+                        <div class="cert-item"><i class="fas fa-check-circle"></i><div><strong>C++ Programming Certification</strong><span>Coding Ninja · Dec 2023</span></div></div>
+                        <div class="cert-item"><i class="fas fa-check-circle"></i><div><strong>Introduction to Generative AI</strong><span>Google · Nov 2023</span></div></div>
+                    </div>
+                </div>
+
+                <div class="detail-card">
                     <h3><i class="fas fa-trophy"></i> Achievements</h3>
-                    <div class="achievement-list">
-                        <div class="achievement-item">
-                            <i class="fas fa-medal"></i>
-                            <p>Earned the Super Contributor Badge in Hacktoberfest 2025</p>
-                        </div>
-                        <div class="achievement-item">
-                            <i class="fas fa-medal"></i>
-                            <p>Contributed in Girl Script Summer Of Code (GSSOC 24)</p>
-                        </div>
-                        <div class="achievement-item">
-                            <i class="fas fa-medal"></i>
-                            <p>100+ Coding Questions Solved on Coding Ninja and Leetcode</p>
-                        </div>
-                        <div class="achievement-item">
-                            <i class="fas fa-star"></i>
-                            <p>3 Star in C++ and Java on Hacker Rank</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-book"></i> Coursework</h3>
-                    <div class="skill-tags">
-                        <span>Software Engineering & Web Technology</span>
-                        <span>Programming With Python and PHP</span>
-                        <span>Operating Systems</span>
-                        <span>Computer Networks</span>
-                        <span>Database Management Systems</span>
-                        <span>Data Structures & Algorithms</span>
-                        <span>Artificial Intelligence & Data Science</span>
-                        <span>Internet of Things</span>
+                    <div class="detail-list">
+                        <div class="achievement-item"><i class="fas fa-medal"></i><p>Super Contributor Badge — Hacktoberfest 2025</p></div>
+                        <div class="achievement-item"><i class="fas fa-medal"></i><p>Contributor — GirlScript Summer of Code (GSSoC '24)</p></div>
+                        <div class="achievement-item"><i class="fas fa-medal"></i><p>100+ coding problems solved on Coding Ninja &amp; LeetCode</p></div>
+                        <div class="achievement-item"><i class="fas fa-star"></i><p>3-Star rating in C++ and Java on HackerRank</p></div>
                     </div>
                 </div>
             </div>
@@ -352,74 +420,61 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">Say hello</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Let's Connect!</h3>
-                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-                    
+                    <h3>Let's build something great together.</h3>
+                    <p>I'm open to discussing new projects, engineering roles, or opportunities to collaborate. Drop me a message and I'll get back to you.</p>
                     <div class="contact-details">
-                        <div class="contact-item">
+                        <a class="contact-item" href="mailto:abhishekkumaroff.dev@gmail.com">
                             <i class="fas fa-envelope"></i>
-                            <div>
-                                <strong>Email</strong>
-                                <a href="mailto:abhishekrao1984@gmail.com">abhishekrao1984@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
+                            <div><strong>Email</strong><span>abhishekkumaroff.dev@gmail.com</span></div>
+                        </a>
+                        <a class="contact-item" href="tel:+917011536938">
                             <i class="fas fa-phone"></i>
-                            <div>
-                                <strong>Phone</strong>
-                                <a href="tel:+919391669633">+91-9391669633</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
+                            <div><strong>Phone</strong><span>+91-7011536938</span></div>
+                        </a>
+                        <a class="contact-item" href="https://linkedin.com/in/abhishekraoas" target="_blank" rel="noopener">
                             <i class="fab fa-linkedin"></i>
-                            <div>
-                                <strong>LinkedIn</strong>
-                                <a href="https://linkedin.com/in/abhishekrao1984" target="_blank">linkedin.com/in/abhishekrao1984</a>
-                            </div>
-                        </div>
+                            <div><strong>LinkedIn</strong><span>linkedin.com/in/abhishekraoas</span></div>
+                        </a>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong>Location</strong>
-                                <span>Gorakhpur, UP, India</span>
-                            </div>
+                            <div><strong>Location</strong><span>Gorakhpur, UP, India</span></div>
                         </div>
                     </div>
-
                     <div class="social-links-contact">
-                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://leetcode.com" target="_blank" aria-label="LeetCode">
-                            <i class="fas fa-code"></i>
-                        </a>
-                        <a href="https://hackerrank.com" target="_blank" aria-label="HackerRank">
-                            <i class="fab fa-hackerrank"></i>
-                        </a>
+                        <a href="https://linkedin.com/in/abhishekraoas" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/abhishekraoas" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://leetcode.com/u/abhishekraoas" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+                        <a href="https://hackerrank.com/abhishekraoas" target="_blank" rel="noopener" aria-label="HackerRank"><i class="fab fa-hackerrank"></i></a>
                     </div>
                 </div>
-
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form id="contactForm" novalidate>
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email">Your Email</label>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <input type="text" id="subject" name="subject" placeholder=" " required>
+                            <label for="subject">Subject</label>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                            <label for="message">Your Message</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <p class="form-status" id="formStatus" role="status"></p>
                     </form>
                 </div>
             </div>
@@ -428,13 +483,17 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Abhishek Rao. All rights reserved.</p>
+        <div class="container footer-content">
+            <a href="#home" class="logo"><span class="logo-mark">AK</span></a>
+            <p>&copy; <span id="year"></span> Abhishek Kumar. Built with care &amp; clean code.</p>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/abhishekraoas" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/abhishekraoas" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button id="scrollTop" class="scroll-top">
+    <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
